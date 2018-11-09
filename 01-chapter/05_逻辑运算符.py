@@ -4,8 +4,12 @@
 def main():
     print()
     print('展示逻辑运算符')
-    a = input('Enter a\n')
-    b = input('Enter b\n')
+    try:
+        a = int(input('Enter a\n'))
+        b = int(input('Enter b\n'))
+    except valueError:
+        a = input('Enter a \n')
+        b = input('Enter b \n')
     print()
     print('a and b', a and b)
     print('not(a and b)', not(a and b))
