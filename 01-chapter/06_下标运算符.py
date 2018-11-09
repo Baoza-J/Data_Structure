@@ -1,0 +1,6 @@
+a = list(range(0,10))
+print(a)
+b = input('输入下标')
+b = int(b)
+print('a[%d]' % b, end = '')
+print(a[b])
